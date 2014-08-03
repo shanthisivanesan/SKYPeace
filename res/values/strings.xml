@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SKY Peace</string>
+    <string name="title">Welcome to SKY Peace!</string>
+    <string name="title_activity_main">Main Activity</string>
+    <string name="title_activity_login">Login Activity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_welcome">Welcome to SKY</string>
+    <string name="LogoutBtn">Logout</string>
+    <string name="title_activity_search_manage">SearchManageActivity</string>
+    <string name="title_activity_create_post">CreatePostActivity</string>
+
+</resources>

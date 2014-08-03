@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+ <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Gallery
+                android:id="@+id/gallery"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:focusable="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvUploading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Uploading Images..."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="invisible" />
+
+            <ProgressBar
+                android:id="@+id/pbLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="false"
+                android:layout_marginTop="100dp"
+                android:visibility="invisible" />
+
+            <Spinner
+                android:id="@+id/spCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gallery"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="30dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spCategory"
+                android:layout_alignRight="@+id/spCategory"
+                android:layout_below="@+id/spCategory"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Enter Title"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/etLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spCategory"
+                android:layout_alignRight="@+id/etTitle"
+                android:layout_below="@+id/etTitle"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Enter Location"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/etPrice"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spCategory"
+                android:layout_alignRight="@+id/etTitle"
+                android:layout_below="@+id/etLocation"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Enter Price"
+                android:inputType="numberDecimal"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spCategory"
+                android:layout_alignRight="@+id/etTitle"
+                android:layout_below="@+id/etPrice"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Enter Phone #"
+                android:inputType="phone"
+                android:textAppearance="?android:attr/textAppearanceSmall" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spCategory"
+                android:layout_alignRight="@+id/etTitle"
+                android:layout_below="@+id/etPhone"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Enter Description"
+                android:inputType="textMultiLine"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <ImageView
+                android:id="@+id/ivLocate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/etLocation"
+                android:layout_toRightOf="@+id/etLocation"
+                android:onClick="onLocate"
+                android:src="@drawable/ic_locate" />
+
+        </RelativeLayout>
+    </ScrollView>
+    
+</RelativeLayout>

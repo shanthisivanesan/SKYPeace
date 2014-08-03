@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_action_logout"
+        android:menuCategory="system"
+        android:onClick="onLogout"
+        android:showAsAction="always"
+        android:title="Logout">
+    </item>
+    <item
+        android:id="@+id/action_create"
+        android:icon="@drawable/ic_action_new"
+        android:menuCategory="system"
+        android:onClick="onCreate"
+        android:showAsAction="always"
+        android:title="Create">
+    </item>
+    <item
+        android:id="@+id/action_list"
+        android:icon="@drawable/ic_action_list"
+        android:menuCategory="system"
+        android:onClick="onList"
+        android:showAsAction="always"
+        android:title="List">
+    </item>
+</menu>
