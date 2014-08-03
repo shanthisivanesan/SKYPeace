@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background="@color/color_background" >
 
    <TextView
         android:id="@+id/txtwelcome"
@@ -10,15 +11,20 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="@string/title_activity_welcome"
-        android:paddingTop="50dp"
         android:textSize="25sp" />
  
     <TextView
         android:id="@+id/txtuser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtwelcome"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentRight="true" />
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/veda" />
 
 </RelativeLayout>

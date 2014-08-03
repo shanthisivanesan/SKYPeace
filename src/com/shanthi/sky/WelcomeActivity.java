@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class WelcomeActivity extends Activity {
 	// Declare Variable
     Button logout;
-
+    String struser;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -26,13 +26,13 @@ public class WelcomeActivity extends Activity {
         ParseUser currentUser = ParseUser.getCurrentUser();
  
         // Convert currentUser into String
-        String struser = currentUser.getUsername().toString();
+        struser = currentUser.getUsername().toString();
  
         // Locate TextView in welcome.xml
         TextView txtuser = (TextView) findViewById(R.id.txtuser);
  
         // Set the currentUser String into TextView
-        txtuser.setText("You are logged in as " + struser);
+        txtuser.setText("User: " + struser);
  
             
 	}
@@ -48,7 +48,7 @@ public class WelcomeActivity extends Activity {
 
 	}
 	public void onList(MenuItem mi){
-		Toast.makeText(this, "logging out", Toast.LENGTH_LONG).show();
+		Toast.makeText(this, "List", Toast.LENGTH_LONG).show();
 		Intent intent = new Intent(
         		WelcomeActivity.this,
                 SearchManageActivity.class);
@@ -56,7 +56,7 @@ public class WelcomeActivity extends Activity {
 
 	}
 	public void onCreate(MenuItem mi){
-		Toast.makeText(this, "logging out", Toast.LENGTH_LONG).show();
+		Toast.makeText(this, "Create new Event", Toast.LENGTH_LONG).show();
 		Intent intent = new Intent(
         		WelcomeActivity.this,
                 CreatePostActivity.class);
@@ -64,6 +64,18 @@ public class WelcomeActivity extends Activity {
 
 	}
 	
+	public void onContact(MenuItem mi){
+		Toast.makeText(this, "Contact", Toast.LENGTH_LONG).show();
+		
+		String message = " Description: "+ struser ;
+		String subject = "Contact SKY Master: " +  struser;
+		Intent share = new Intent(Intent.ACTION_SEND);
+		share.setType("text/plain");
+		share.putExtra(Intent.EXTRA_SUBJECT, subject);
+		share.putExtra(Intent.EXTRA_TEXT, message);
+		startActivity(Intent.createChooser(share, "Contact SKY Master"));
+
+	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater();

@@ -25,4 +25,12 @@
         android:showAsAction="always"
         android:title="List">
     </item>
+    <item
+        android:id="@+id/action_contact"
+        android:icon="@drawable/ic_action_contact"
+        android:menuCategory="system"
+        android:onClick="onContact"
+        android:showAsAction="always"
+        android:title="List">
+    </item>
 </menu>

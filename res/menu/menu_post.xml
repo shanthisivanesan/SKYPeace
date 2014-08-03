@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<item
+        android:id="@+id/action_save"
+        android:icon="@drawable/ic_action_save"
+        android:menuCategory="system"
+        android:onClick="onSave"
+        android:showAsAction="always"
+        android:title="Logout">
+    </item>
+    <item
+        android:id="@+id/action_cancel"
+        android:icon="@drawable/ic_action_cancel"
+        android:menuCategory="system"
+        android:onClick="onCancel"
+        android:showAsAction="always"
+        android:title="Create">
+    </item>
+    <item
+        android:id="@+id/action_back"
+        android:icon="@drawable/ic_action_back"
+        android:menuCategory="system"
+        android:onClick="onBack"
+        android:showAsAction="always"
+        android:title="Create">
+    </item>
+</menu>

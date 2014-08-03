@@ -6,9 +6,9 @@
     <string name="title_activity_main">Main Activity</string>
     <string name="title_activity_login">Login Activity</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_welcome">Welcome to SKY</string>
+    <string name="title_activity_welcome">SKY</string>
     <string name="LogoutBtn">Logout</string>
     <string name="title_activity_search_manage">SearchManageActivity</string>
     <string name="title_activity_create_post">CreatePostActivity</string>
-
+	<color name="color_background">#F0F8FF</color>
 </resources>
