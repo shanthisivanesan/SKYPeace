@@ -6,9 +6,30 @@
     <string name="title_activity_main">Main Activity</string>
     <string name="title_activity_login">Login Activity</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_welcome">SKY</string>
+    <string name="title_activity_welcome">SKY(Simplified Kundalini Yoga)</string>
     <string name="LogoutBtn">Logout</string>
     <string name="title_activity_search_manage">SearchManageActivity</string>
     <string name="title_activity_create_post">CreatePostActivity</string>
+    <string name="title_description">Description</string>
+    <string name="title_location">Location</string>
+    <string name="title_title">Title</string>
+    <string name="title_date">Date</string>
+    <string name="price">Price</string>
+    
+    <string name="title_blessing">Blessing the World</string>
+    <string name="title_meditation">Simplified Kundalini Yoga</string>
+    <string name="title_exercise">Simplified Physical Exercises</string>
+    <string name="title_kayakalpa">Kaya Kalpa Yoga</string>
+    <string name="title_interospection">Introspection</string>
+    <string name="desc_blessing">World Peace starts with individual peace. Blessing / Greeting  self , family, friends and the World - makes changes in self and generates positive vibration around the World.</string>
+    <string name="desc_meditation">A systematic training of mind to bring about tranquility, increased sense of awareness, clarity and strengthening of mind.</string>
+    <string name="desc_exercise">An effective package of simple physical exercises are designed to regulate the flow of blood, heat, air and life force in the body leading to good physical health.</string>
+    <string name="desc_kayakalpa">It is a practice devised by \'\ Siddhas\'\, the wise ancestral sages, to intensify the vital energy and thus enhance the quality of life.</string>
+    <string name="desc_interospection">A practical methodology for sublimating the negative emotions of greed, anger, vengeance, worries, etc.,</string>
+    
 	<color name="color_background">#F0F8FF</color>
+	<color name ="color_text">#000099</color>
+	<color name="color_price">#fafafa</color>
+	<color name="color_pricebackground">#CC404040</color>
+	<color name="transparent">#00F0F8FF</color>
 </resources>

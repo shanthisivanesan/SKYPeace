@@ -28,7 +28,7 @@
 
     <application
         android:name=".SKYApplication"
-        android:icon="@drawable/ic_skylogo"
+        android:icon="@drawable/ic_veda"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity android:name=".LoginActivity" >

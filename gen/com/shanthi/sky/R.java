@@ -334,6 +334,9 @@ containing a value of this type.
     }
     public static final class color {
         public static final int color_background=0x7f070017;
+        public static final int color_price=0x7f070019;
+        public static final int color_pricebackground=0x7f07001a;
+        public static final int color_text=0x7f070018;
         public static final int common_action_bar_splitter=0x7f070009;
         /**  Sign-in Button Colors 
          */
@@ -346,8 +349,9 @@ containing a value of this type.
         public static final int common_signin_btn_light_text_disabled=0x7f070006;
         public static final int common_signin_btn_light_text_focused=0x7f070007;
         public static final int common_signin_btn_light_text_pressed=0x7f070005;
-        public static final int common_signin_btn_text_dark=0x7f070018;
-        public static final int common_signin_btn_text_light=0x7f070019;
+        public static final int common_signin_btn_text_dark=0x7f07001c;
+        public static final int common_signin_btn_text_light=0x7f07001d;
+        public static final int transparent=0x7f07001b;
         public static final int wallet_bright_foreground_disabled_holo_light=0x7f07000f;
         /** 
          Wallet colors to support consistent Wallet fragment holo dark UI in client application
@@ -366,8 +370,8 @@ containing a value of this type.
         public static final int wallet_hint_foreground_holo_light=0x7f070011;
         public static final int wallet_holo_blue_light=0x7f070015;
         public static final int wallet_link_text_light=0x7f070016;
-        public static final int wallet_primary_text_holo_light=0x7f07001a;
-        public static final int wallet_secondary_text_holo_dark=0x7f07001b;
+        public static final int wallet_primary_text_holo_light=0x7f07001e;
+        public static final int wallet_secondary_text_holo_dark=0x7f07001f;
     }
     public static final class drawable {
         public static final int common_signin_btn_icon_dark=0x7f020000;
@@ -410,18 +414,19 @@ containing a value of this type.
         public static final int ic_plusone_standard_off_client=0x7f020025;
         public static final int ic_plusone_tall_off_client=0x7f020026;
         public static final int ic_skylogo=0x7f020027;
-        public static final int powered_by_google_dark=0x7f020028;
-        public static final int powered_by_google_light=0x7f020029;
-        public static final int veda=0x7f02002a;
+        public static final int ic_veda=0x7f020028;
+        public static final int powered_by_google_dark=0x7f020029;
+        public static final int powered_by_google_light=0x7f02002a;
+        public static final int veda=0x7f02002b;
     }
     public static final class id {
-        public static final int action_back=0x7f08002b;
-        public static final int action_cancel=0x7f08002a;
-        public static final int action_contact=0x7f08002f;
-        public static final int action_create=0x7f08002d;
-        public static final int action_list=0x7f08002e;
-        public static final int action_logout=0x7f08002c;
-        public static final int action_save=0x7f080029;
+        public static final int action_back=0x7f08003c;
+        public static final int action_cancel=0x7f08003b;
+        public static final int action_contact=0x7f080040;
+        public static final int action_create=0x7f08003e;
+        public static final int action_list=0x7f08003f;
+        public static final int action_logout=0x7f08003d;
+        public static final int action_save=0x7f08003a;
         public static final int book_now=0x7f080010;
         public static final int btnLogin=0x7f080023;
         public static final int btnSignUp=0x7f080022;
@@ -441,8 +446,9 @@ containing a value of this type.
         public static final int holo_dark=0x7f080005;
         public static final int holo_light=0x7f080006;
         public static final int hybrid=0x7f080004;
-        public static final int imageView1=0x7f080028;
+        public static final int ivImage=0x7f080027;
         public static final int ivLocate=0x7f08001e;
+        public static final int lvPosts=0x7f080034;
         public static final int match_parent=0x7f08000c;
         public static final int monochrome=0x7f080013;
         public static final int none=0x7f080000;
@@ -455,13 +461,29 @@ containing a value of this type.
         public static final int selectionDetails=0x7f08000b;
         public static final int spCategory=0x7f080018;
         public static final int strict_sandbox=0x7f080009;
-        public static final int tabs=0x7f080025;
+        public static final int swipe_container=0x7f080033;
+        public static final int tabs=0x7f080024;
         public static final int terrain=0x7f080003;
+        public static final int tvDate=0x7f080039;
+        public static final int tvDescription=0x7f080036;
+        public static final int tvDescription5=0x7f080032;
+        public static final int tvLocation=0x7f080038;
+        public static final int tvPrice=0x7f080037;
+        public static final int tvTitle=0x7f080035;
         public static final int tvUploading=0x7f080016;
+        public static final int tv_blessing=0x7f08002a;
+        public static final int tv_exercise=0x7f08002c;
+        public static final int tv_kayakalpa=0x7f08002e;
+        public static final int tv_meditation=0x7f080030;
+        public static final int tvtitle_blessing=0x7f080029;
+        public static final int tvtitle_exercise=0x7f08002b;
+        public static final int tvtitle_interospection=0x7f080031;
+        public static final int tvtitle_kayakalpa=0x7f08002d;
+        public static final int tvtitle_meditation=0x7f08002f;
         public static final int txtTitle=0x7f08001f;
-        public static final int txtuser=0x7f080027;
+        public static final int txtuser=0x7f080028;
         public static final int txtwelcome=0x7f080026;
-        public static final int vpPager=0x7f080024;
+        public static final int vpPager=0x7f080025;
         public static final int wrap_content=0x7f08000d;
     }
     public static final class integer {
@@ -473,6 +495,8 @@ containing a value of this type.
         public static final int activity_main=0x7f030002;
         public static final int activity_search_manage=0x7f030003;
         public static final int activity_welcome=0x7f030004;
+        public static final int fragment_eventlist=0x7f030005;
+        public static final int post_item=0x7f030006;
     }
     public static final class menu {
         public static final int menu_post=0x7f0a0000;
@@ -576,13 +600,28 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f06001e;
+        public static final int desc_blessing=0x7f060033;
+        public static final int desc_exercise=0x7f060035;
+        public static final int desc_interospection=0x7f060037;
+        public static final int desc_kayakalpa=0x7f060036;
+        public static final int desc_meditation=0x7f060034;
         public static final int hello_world=0x7f060024;
+        public static final int price=0x7f06002d;
         public static final int title=0x7f060021;
         public static final int title_activity_create_post=0x7f060028;
         public static final int title_activity_login=0x7f060023;
         public static final int title_activity_main=0x7f060022;
         public static final int title_activity_search_manage=0x7f060027;
         public static final int title_activity_welcome=0x7f060025;
+        public static final int title_blessing=0x7f06002e;
+        public static final int title_date=0x7f06002c;
+        public static final int title_description=0x7f060029;
+        public static final int title_exercise=0x7f060030;
+        public static final int title_interospection=0x7f060032;
+        public static final int title_kayakalpa=0x7f060031;
+        public static final int title_location=0x7f06002a;
+        public static final int title_meditation=0x7f06002f;
+        public static final int title_title=0x7f06002b;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */
