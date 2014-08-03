@@ -44,7 +44,7 @@ public class PostDao {
 	public void savePost(Post post) {
 		ParsePost parsePost = new ParsePost(post);
 		parsePost.saveInBackground();		
-		sendNotifications(post);
+		//sendNotifications(post);
 	}
 
 	private void sendNotifications(Post post) {
@@ -52,7 +52,7 @@ public class PostDao {
 		for (String keyword : post.getTitle().split("\\s+")){
 			JSONObject data = new JSONObject();
 			try {
-				data.put("post", JsonUtil.toJson(post));
+				data.put("Events", JsonUtil.toJson(post));
 			} catch (JSONException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

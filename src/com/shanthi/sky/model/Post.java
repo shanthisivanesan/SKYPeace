@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Model class for a single Post item for sale
+ * Model class for a single Post item for Event
  * 
- * @author quding
+ * @author shanthi
  * 
  */
 public class Post {

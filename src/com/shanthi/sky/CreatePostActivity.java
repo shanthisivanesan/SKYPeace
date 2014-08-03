@@ -21,6 +21,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Gallery;
 import android.widget.ImageView;
@@ -50,11 +51,12 @@ public class CreatePostActivity extends BaseActivity {
 	private PostDao postDao = PostDao.getInstance();
 	private GeoLocation geoLocation;
 	private Location lastKnownLocation;
-	
+	private boolean isNewPost = false;
 	private Geocoder geoCoder;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
 		setContentView(R.layout.activity_create_post);
 		lastKnownLocation = getIntent().getParcelableExtra("location");
 		geoCoder = new Geocoder(this);
@@ -83,7 +85,12 @@ public class CreatePostActivity extends BaseActivity {
 		spinner.setAdapter(adapter);
 		
 		String locationJson = getIntent().getStringExtra("geo_location");
-		//populateData();
+		fetchPostData();
+		if (!isNewPost){
+			getActionBar().setTitle("Edit Event");
+			populateData();
+		}
+		
 	}
 	public void setUpViews() {
 		spinner = (Spinner) findViewById(R.id.spCategory);
@@ -196,6 +203,21 @@ public class CreatePostActivity extends BaseActivity {
 
 	}
 	
+	public void fetchPostData(){
+		//Existing ad
+		String postJson = getIntent().getStringExtra("post");
+		position = getIntent().getIntExtra("position", -1);
+		if (postJson == null || postJson.isEmpty())
+		{
+			post = new Post();
+			isNewPost = true;
+			//gallery.setVisibility(View.GONE);
+		}
+		else{
+			isNewPost = false;
+			post = (Post) JsonUtil.fromJson(postJson, Post.class);
+		}
+	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater();
