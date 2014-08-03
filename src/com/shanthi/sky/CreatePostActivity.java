@@ -176,7 +176,6 @@ public class CreatePostActivity extends BaseActivity {
 		post.setLocation(geoLocation);
 		
 		postDao.savePost(post);
-		
 	}
 	
 	public void onCancel(MenuItem mi){
