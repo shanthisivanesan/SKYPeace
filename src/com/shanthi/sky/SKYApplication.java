@@ -29,7 +29,7 @@ public class SKYApplication extends Application {
 		ParseObject.registerSubclass(ParseImages.class);
 		PushService.setDefaultPushCallback(this, WelcomeActivity.class);
 		// Add your initialization code here
-		//ParseUser.enableAutomaticUser();
+		ParseUser.enableAutomaticUser();
        // ParseACL defaultACL = new ParseACL();
  
         // If you would like all objects to be private by default, remove this

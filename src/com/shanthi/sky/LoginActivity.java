@@ -90,9 +90,9 @@ public class LoginActivity extends Activity {
                     ParseUser user = new ParseUser();
                     user.setUsername(usernametxt);
                     user.setPassword(passwordtxt);
-                    user.signUpInBackground(new SignUpCallback() {
-                        public void done(ParseException e) {
-                            if (e == null) {
+                    //user.signUpInBackground(new SignUpCallback() {
+                        //public void done(ParseException e) {
+                         //   if (e == null) {
                                 // Show a simple Toast message upon successful registration
                                 Toast.makeText(getApplicationContext(),
                                         "Successfully Signed up, please log in.",
@@ -106,13 +106,13 @@ public class LoginActivity extends Activity {
                                         Toast.LENGTH_LONG).show();
                                 finish();
                                 
-                            } else {
+                           /* } else {
                                 Toast.makeText(getApplicationContext(),
                                         "Sign up Error", Toast.LENGTH_LONG)
                                         .show();
-                            }
-                        }
-                    });
+                            }*/
+                       // }
+                   // });
                 }
  
             }
